@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #282c34;
+    color: #ffffff;
+    min-height: 100vh;
+}
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+#registro {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+#producao {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+#impressao {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+#relatorio {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+#dashboard {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+.container {
+    padding: 20px;
+    background-color: #3a3f47;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+.input-field {
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background-color: #4a4f57;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+}
+.input-field:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background-color: #5a5f67;
+}
+.btn-primary, .btn-secondary, .btn-whatsapp {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+}
+.btn-primary {
+    background-color: #38a169;
+}
+.btn-primary:hover {
+    background-color: #2f855a;
+}
+.btn-secondary {
+    background-color: #3182ce;
+}
+.btn-secondary:hover {
+    background-color: #2b6cb0;
+}
+.btn-whatsapp {
+    background-color: #25D366;
+}
+.btn-whatsapp:hover {
+    background-color: #1ebe57;
+}
+#producao-lista, #impressao-lista, #relatorio-entregadores {
+    margin-top: 15px;
+}
+.pedido-item {
+    background-color: #4a4f57;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+#dashboard {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #3a3f47;
+}
+#dashboard table, #relatorio-entregadores table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+#dashboard th, #dashboard td, #relatorio-entregadores th, #relatorio-entregadores td {
+    border: 1px solid #666;
+    padding: 10px;
+    text-align: left;
+    color: #ffffff;
+}
+#dashboard th, #relatorio-entregadores th {
+    background-color: #4a4f57;
+    font-weight: bold;
+}
+#dashboard-error {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff5555;
+}
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre;
+    margin: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    overflow-x: auto;
+}
+pre span.label {
+    display: inline-block;
+    width: 12ch;
+    text-align: right;
+    padding-right: 5px;
+}
+@media (max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #registro, #producao, #impressao, #relatorio, #dashboard {
+        width: 100%;
+    }
+}
